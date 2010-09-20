@@ -1,0 +1,21 @@
+Run Cucumber tests cross-browser in parallel with Sauce Labs
+------------------------------------------------------------
+Installation:
+git clone http://github.com/sgrove/cucumber_sauce.git
+gem install cucumber selenium-client parallel
+
+Run:
+rake test
+
+TODO:
+Move the browsers out to a yaml file
+
+Thanks:
+Matt (sniped some code from http://wolfewebservices.com/blog/testing-multiple-browsers-selenium-and-cucumber)
+Sauce Labs (my employer and backend provider)
+
+License:
+Released under MIT license
+
+Questions?
+Shoot me an email, I'm sean at saucelabs.com

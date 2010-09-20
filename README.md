@@ -15,7 +15,7 @@ Optionally edit one of the browser*.yml files to specify which browsers you want
 Run
 ---
 
-    rake test
+    rake cucumber_sauce
 
 TODO
 ----

@@ -15,7 +15,7 @@ task :test do
   dir = "reports/#{year}/#{month}"
   FileUtils::mkdir_p(dir)
   
-  Parallel.map(@browsers, :in_processes => @browsers.count) do |browser|
+  Parallel.map(@browsers, :in_threads => @browsers.size) do |browser|
     begin
       ENV['SELENIUM_BROWSER_OS'] = browser[:os]
       ENV['SELENIUM_BROWSER_NAME'] = browser[:name]

@@ -3,15 +3,11 @@ require 'cucumber/rake/task'
 require 'selenium/rake/tasks'
 require 'parallel'
 
-# Change these to specify which browsers on which 
-# platforms you want to cover
-@browsers = [{:os => "Windows 2003", :name => "iehta", :version => "6."},
-             {:os => "Windows 2003", :name => "iehta", :version => "7."},
-             {:os => "Windows 2003", :name => "iehta", :version => "8."},
-             {:os => "Windows 2003", :name => "firefox", :version => "3."},
-             {:os => "Windows 2003", :name => "safari", :version => "4."},
-             {:os => "Windows 2003", :name => "googlechrome", :version => ""}]
+# Edit the browser yaml file to specify which os/browsers you want to use
+# You can use multiple files and specify which to use at runtime
+browser_file = ENV['BROWSERS'] || "browsers_full.yml"
 
+@browsers = YAML.load_file(browser_file)[:browsers]
 
 desc "Invoke behaviours on all browsers on specified platform"
 task :test do

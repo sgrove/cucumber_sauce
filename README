@@ -5,20 +5,24 @@ git clone http://github.com/sgrove/cucumber_sauce.git
 gem install cucumber selenium-client parallel
 
 Config:
-Add your username and api-key to ondemand.yml
+Add your Sauce Labs username and api-key to ondemand.yml
+Optionally edit one of the browser*.yml files to specify which browsers you want to run
 
 Run:
 rake test
 
 TODO:
-Move the browsers out to a yaml file
+Combine all output into a single html report. Probably a long-term project.
 
 Thanks:
 Matt (sniped some code from http://wolfewebservices.com/blog/testing-multiple-browsers-selenium-and-cucumber)
-Sauce Labs (my employer and backend provider)
+Sauce Labs (my employer and backend provider) http://saucelabs.com/
 
 License:
 Released under MIT license
 
 Questions?
 Shoot me an email, I'm sean at saucelabs.com
+
+Don't have a Sauce Labs accout?
+Create an account and send me an email along with what you're working on, and I'll see if I can't get you a hundred minutes or so to test this out :)

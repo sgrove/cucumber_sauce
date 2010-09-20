@@ -1,0 +1,1 @@
+default: --format html --out <%= ENV['SELENIUM_REPORT_FILENAME'] %> --format pretty -r features/support/env.rb -r features/support/enhanced.rb -r features/step_definitions features/enhanced

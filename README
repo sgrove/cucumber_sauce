@@ -4,6 +4,9 @@ Installation:
 git clone http://github.com/sgrove/cucumber_sauce.git
 gem install cucumber selenium-client parallel
 
+Config:
+Add your username and api-key to ondemand.yml
+
 Run:
 rake test
 

@@ -2,6 +2,8 @@ require 'rubygems'
 require 'cucumber/rake/task'
 require 'selenium/rake/tasks'
 require 'parallel'
+require 'yaml'
+
 
 # Edit the browser yaml file to specify which os/browsers you want to use
 # You can use multiple files and specify which to use at runtime

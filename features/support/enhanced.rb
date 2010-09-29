@@ -5,8 +5,8 @@ config = {
   :browser =>  ENV['SELENIUM_BROWSER_NAME'],
   :version =>  ENV['SELENIUM_BROWSER_VERSION'],
   :host =>     ENV['SELENIUM_HOST'] || "http://google.com",
-  :username => ondemand["username"],
-  :api_key =>  ondemand["api_key"]
+  :username => ondemand[:username],
+  :api_key =>  ondemand[:api_key]
 }
 
 # Double-check to make sure we have all the config we need to run a proper job

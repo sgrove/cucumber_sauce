@@ -26,13 +26,13 @@ Questions?
 Shoot me an email, I'm sean at saucelabs.com
 
 Don't have a Sauce Labs accout?
-Create an account and send me an email along with what you're working on, and I'll see if I can't get you a hundred minutes or so to test this out :)
+Why not? It's free to try out :)
 
 Thanks
 ------
 [Matt][1]
 
-[Sauce Labs][2] (my employer and backend provider) 
+[Sauce Labs][2]
 
 License
 -------

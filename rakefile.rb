@@ -41,4 +41,4 @@ Cucumber::Rake::Task.new(:'run_browser_tests') do |t|
   t.cucumber_opts = "--format pretty --format html features"
 end
 
-task :default => [:test]
+task :default => [:cucumber_sauce]

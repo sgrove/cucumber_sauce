@@ -4,7 +4,7 @@ Installation
 ------------
 
     git clone http://github.com/sgrove/cucumber_sauce.git
-    gem install cucumber selenium-client parallel
+    gem install cucumber selenium-webdriver parallel
         
 Config
 ------
